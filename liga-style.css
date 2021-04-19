@@ -7,6 +7,11 @@
         box-sizing: border-box;
     }
 
+    .header {
+        width: 100%;
+        height: 80px;
+    }
+
     header {
         width: 100%;
         height: 80px;
@@ -14,6 +19,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: fixed;
+        z-index: 999;
     }
 
     .container-header {
@@ -43,6 +50,10 @@
         font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         color: white;
+    }
+
+    main {
+        top: 60px;
     }
 
     .degrade {
@@ -119,26 +130,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c31616', end
         width: 100%;
         height: 442px;
         -webkit-transform: skew(20deg);
-        -moz-transform: skew(20deg);
-        -o-transform: skew(20deg);
         background: #000000;
         transform: skewY(-4deg);
-        top: 656px;
+        display: flex;
+        justify-content: center;
     }
 
     .conteudo-retangulo-torto {
+        width: 77vw;
+        height: 442px;
+        -webkit-transform: skew(-20deg);
+        transform: skewY(4deg);
         display: flex;
         justify-content: space-between;
-        align-content: center;
-        width: 89vw;
-        position: absolute;
-        top: 50.99vw;
-        left: 11vw;
+        align-items: center;
     }
 
     .textos-retangulo-torto {
         color: white;
         width: 36vw;
+        height: 74%;
     }
 
     .como-participar {
@@ -158,7 +169,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c31616', end
     }
 
     .imagem-retangulo-torto {
-        width: 71%;
+        height: 100%;
+        margin-bottom: 0.4%;
+    }
+
+    .imagem-retangulo-torto img {
+        height: 424px;
     }
 
     .fundo-campeonato {
