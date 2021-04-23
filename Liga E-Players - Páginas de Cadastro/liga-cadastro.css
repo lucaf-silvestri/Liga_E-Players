@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #1E1C21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    -webkit-box-shadow: 0px 0px 25px 10px #000000;
+    box-shadow: 0px 0px 25px 10px #000000;
+}
+
+.container-header {
+    height: 80px;
+    width: 77vw;
+    background-color: #1E1C21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 18vw;
+}
+
+.menu-header {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.banner {
+    background-image: linear-gradient(to bottom, rgb(19 37 125 / 73%), rgb(19 37 125 / 73%)), url(assets/cs.jpeg);
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    height: 22vw;
+    border: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner-jogador {
+    background-image: linear-gradient(to bottom, rgb(131 2 2 / 65%), rgb(107 0 0 / 65%)), url(assets/pilotos.png);
+    width: 100%;
+    background-size: cover;
+    background-color: #c90909b3;
+    height: 22vw;
+    border: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.fundo-cadastro-times {
+    width: 100%;
+    height: 40vw;
+    background-color: #1E1C21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-times-degrade {
+    background: rgb(28, 26, 30);
+    background: -moz-linear-gradient(top, rgba(28, 26, 30, 1) 0%, rgba(16, 14, 17, 1) 0%, rgba(13, 12, 15, 1) 1%, rgba(21, 21, 22, 1) 11%, rgba(31, 31, 31, 1) 18%, rgba(44, 44, 44, 1) 24%, rgba(45, 45, 45, 1) 76%, rgba(31, 31, 32, 1) 82%, rgba(20, 20, 21, 1) 89%, rgba(12, 12, 14, 1) 97%, rgba(13, 12, 14, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(28, 26, 30, 1) 0%, rgba(16, 14, 17, 1) 0%, rgba(13, 12, 15, 1) 1%, rgba(21, 21, 22, 1) 11%, rgba(31, 31, 31, 1) 18%, rgba(44, 44, 44, 1) 24%, rgba(45, 45, 45, 1) 76%, rgba(31, 31, 32, 1) 82%, rgba(20, 20, 21, 1) 89%, rgba(12, 12, 14, 1) 97%, rgba(13, 12, 14, 1) 100%);
+    background: linear-gradient(to bottom, rgba(28, 26, 30, 1) 0%, rgba(16, 14, 17, 1) 0%, rgba(13, 12, 15, 1) 1%, rgba(21, 21, 22, 1) 11%, rgba(31, 31, 31, 1) 18%, rgba(44, 44, 44, 1) 24%, rgba(45, 45, 45, 1) 76%, rgba(31, 31, 32, 1) 82%, rgba(20, 20, 21, 1) 89%, rgba(12, 12, 14, 1) 97%, rgba(13, 12, 14, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1c1a1e', endColorstr='#0d0c0e', GradientType=0);
+    width: 50%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 8px 10px 15px 5px #000000;
+    box-shadow: 8px 10px 15px 5px #000000;
+}
+
+.cadastro-times-container {
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-times-container span {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+
+.barra-equipe {
+    display: flex;
+    width: 100%;
+    height: 2vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 110%;
+    line-height: 50%;
+    margin-bottom: 1vw;
+    background-color: rgb(175, 175, 175);
+}
+
+.barra-equipe input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(175, 175, 175);
+}
+
+.barra-equipe option {
+    background-color: rgb(255, 255, 255);
+}
+
+.label {
+    background-color: rgb(175, 175, 175);
+    width: 12vw;
+    height: 2vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 100%;
+    line-height: 170%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-emblema {
+    display: none;
+}
+
+.escolher-imagem input {
+    display: none;
+}
+
+.cadastrar-times {
+    width: 100%;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrar-times button {
+    width: 32%;
+    height: 2.3vw;
+    background-color: #001F70;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.cadastrar-jogadores {
+    width: 100%;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrar-jogadores button {
+    width: 32%;
+    height: 2.3vw;
+    background-color: #c90909;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.tabela-times-fundo {
+    width: 100%;
+    height: 30vw;
+    background-color: #1E1C21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela-times {
+    width: 50%;
+    height: 20vw;
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: lighter;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+.tabela-times th {
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: lighter;
+    background-color: black;
+}
+
+.tabela-times td {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+.linha1 {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4vw;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+.linha2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6vw;
+}
+
+.linha3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6vw;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 230%;
+    color: #FFFFFF;
+}
+
+.listadetimes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1E1C21;
+}
+
+.listadetimes h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 230%;
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #010101;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    background-color: #010101;
+    height: 250px;
+    width: 77vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-esquerda {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    justify-self: left;
+}
+
+.circulo {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 3%;
+}
+
+.links-bolinha {
+    width: 16vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links-footer {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.links-footer a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100%;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.footer-links-uteis {
+    width: 13vw;
+    height: 10vw;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links-uteis span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 125%;
+    color: #FFFFFF;
+}
+
+.footer-paginas span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 125%;
+    color: #FFFFFF;
+}
+
+.footer-paginas {
+    width: 12vw;
+    height: 10vw;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-direita {
+    flex-direction: column;
+    align-items: center;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    justify-self: right;
+    height: 100%;
+}
+
+.footer-direita span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80%;
+    color: #FFFFFF;
+    margin-bottom: 5%;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+}
+
+.buscar input {
+    width: 14vw;
+    height: 2.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 110%;
+    line-height: 50%;
+}
+
+.buscar a {
+    width: 8vw;
+    height: 2.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 110%;
+    color: white;
+    background-color: #001F70;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #6767678f;
+    opacity: 1;
+    margin-left: 5%;
+}
+
+.cadastrar {
+    display: flex;
+    align-self: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.siga-nos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18vw;
+}
+
+.siga-nos p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100%;
+    color: #FFFFFF;
+}
+
+.logos-apps {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.apps {
+    width: 9vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
